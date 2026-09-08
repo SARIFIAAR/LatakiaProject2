@@ -182,8 +182,8 @@
     display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,auto);
     gap:7px;align-items:end;padding:7px 9px 8px;border-radius:7px;min-width:0;
   }
-  .grpbox.net{background:var(--rev-soft);}
-  .grpbox.common{background:#eef1f4;}
+  .grpbox.g-net{background:var(--rev-soft);}
+  .grpbox.g-com{background:#eef1f4;}
   .grpbox .field{min-width:0;margin:0;}
   .grpbox .field label{font-size:10px;margin-bottom:2px;line-height:1.15;}
   .grpbox .field label .u{color:var(--ink-3);}
@@ -193,7 +193,7 @@
   .grpbox .cellout .lab{color:var(--ink-2);display:block;font-size:10px;margin-bottom:2px;line-height:1.1;}
   .grpbox .cellout .lab .ar{color:var(--ink-3);font-size:9px;}
   .grpbox .cellout .val{font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--rev);white-space:nowrap;}
-  .grpbox.common .cellout .val{color:var(--ink);}
+  .grpbox.g-com .cellout .val{color:var(--ink);}
   .out.totals{align-self:center;text-align:right;padding-bottom:1px;min-width:0;}
   .out.totals .lab{color:var(--ink-2);display:block;font-size:10px;margin-bottom:2px;line-height:1.1;}
   .out.totals .lab .ar{color:var(--ink-3);font-size:9px;}
@@ -521,7 +521,7 @@
         <span class="n-ar ar">المحلات الأمامية</span>
         <span class="tag" data-load></span>
       </div>
-      <div class="grpbox net">
+      <div class="grpbox g-net">
         <div class="field">
           <label for="u1">Net area <span class="u">m²</span><span class="ar">المساحة الصافية</span></label>
           <input id="u1" type="number" min="0" step="0.01" value="70.45" data-usable>
@@ -535,7 +535,7 @@
           <span class="val" data-nettotal>—</span>
         </div>
       </div>
-      <div class="grpbox common">
+      <div class="grpbox g-com">
         <div class="field">
           <label for="c1">Common + walls <span class="u">m²</span><span class="ar">المشاع والجدران</span></label>
           <input id="c1" type="number" min="0" step="0.01" value="40.56" data-carea>
@@ -563,7 +563,7 @@
         <span class="n-ar ar">المحلات الخلفية</span>
         <span class="tag" data-load></span>
       </div>
-      <div class="grpbox net">
+      <div class="grpbox g-net">
         <div class="field">
           <label for="u2">Net area <span class="u">m²</span><span class="ar">المساحة الصافية</span></label>
           <input id="u2" type="number" min="0" step="0.01" value="70.37" data-usable>
@@ -577,7 +577,7 @@
           <span class="val" data-nettotal>—</span>
         </div>
       </div>
-      <div class="grpbox common">
+      <div class="grpbox g-com">
         <div class="field">
           <label for="c2">Common + walls <span class="u">m²</span><span class="ar">المشاع والجدران</span></label>
           <input id="c2" type="number" min="0" step="0.01" value="40.53" data-carea>
@@ -610,7 +610,7 @@
         <span class="n-ar ar">الشارع</span>
         <span class="tag" data-load></span>
       </div>
-      <div class="grpbox net">
+      <div class="grpbox g-net">
         <div class="field">
           <label for="u3">Net area <span class="u">m²</span><span class="ar">المساحة الصافية</span></label>
           <input id="u3" type="number" min="0" step="0.01" value="49" data-usable>
@@ -624,7 +624,7 @@
           <span class="val" data-nettotal>—</span>
         </div>
       </div>
-      <div class="grpbox common">
+      <div class="grpbox g-com">
         <div class="field">
           <label for="c3">Common + walls <span class="u">m²</span><span class="ar">المشاع والجدران</span></label>
           <input id="c3" type="number" min="0" step="0.01" value="4.15" data-carea>
@@ -652,7 +652,7 @@
         <span class="n-ar ar">زاوية الشارع</span>
         <span class="tag" data-load></span>
       </div>
-      <div class="grpbox net">
+      <div class="grpbox g-net">
         <div class="field">
           <label for="u4">Net area <span class="u">m²</span><span class="ar">المساحة الصافية</span></label>
           <input id="u4" type="number" min="0" step="0.01" value="40" data-usable>
@@ -666,7 +666,7 @@
           <span class="val" data-nettotal>—</span>
         </div>
       </div>
-      <div class="grpbox common">
+      <div class="grpbox g-com">
         <div class="field">
           <label for="c4">Common + walls <span class="u">m²</span><span class="ar">المشاع والجدران</span></label>
           <input id="c4" type="number" min="0" step="0.01" value="3.39" data-carea>
@@ -694,7 +694,7 @@
         <span class="n-ar ar">الزاوية الخلفية</span>
         <span class="tag" data-load></span>
       </div>
-      <div class="grpbox net">
+      <div class="grpbox g-net">
         <div class="field">
           <label for="u5">Net area <span class="u">m²</span><span class="ar">المساحة الصافية</span></label>
           <input id="u5" type="number" min="0" step="0.01" value="44" data-usable>
@@ -708,7 +708,7 @@
           <span class="val" data-nettotal>—</span>
         </div>
       </div>
-      <div class="grpbox common">
+      <div class="grpbox g-com">
         <div class="field">
           <label for="c5">Common + walls <span class="u">m²</span><span class="ar">المشاع والجدران</span></label>
           <input id="c5" type="number" min="0" step="0.01" value="3.73" data-carea>
@@ -736,7 +736,7 @@
         <span class="n-ar ar">الخلفي</span>
         <span class="tag" data-load></span>
       </div>
-      <div class="grpbox net">
+      <div class="grpbox g-net">
         <div class="field">
           <label for="u6">Net area <span class="u">m²</span><span class="ar">المساحة الصافية</span></label>
           <input id="u6" type="number" min="0" step="0.01" value="44" data-usable>
@@ -750,7 +750,7 @@
           <span class="val" data-nettotal>—</span>
         </div>
       </div>
-      <div class="grpbox common">
+      <div class="grpbox g-com">
         <div class="field">
           <label for="c6">Common + walls <span class="u">m²</span><span class="ar">المشاع والجدران</span></label>
           <input id="c6" type="number" min="0" step="0.01" value="3.73" data-carea>
@@ -783,7 +783,7 @@
         <span class="n-ar ar">الشارع</span>
         <span class="tag" data-load></span>
       </div>
-      <div class="grpbox net">
+      <div class="grpbox g-net">
         <div class="field">
           <label for="u7">Net area <span class="u">m²</span><span class="ar">المساحة الصافية</span></label>
           <input id="u7" type="number" min="0" step="0.01" value="49" data-usable>
@@ -797,7 +797,7 @@
           <span class="val" data-nettotal>—</span>
         </div>
       </div>
-      <div class="grpbox common">
+      <div class="grpbox g-com">
         <div class="field">
           <label for="c7">Common + walls <span class="u">m²</span><span class="ar">المشاع والجدران</span></label>
           <input id="c7" type="number" min="0" step="0.01" value="4.15" data-carea>
@@ -825,7 +825,7 @@
         <span class="n-ar ar">زاوية الشارع</span>
         <span class="tag" data-load></span>
       </div>
-      <div class="grpbox net">
+      <div class="grpbox g-net">
         <div class="field">
           <label for="u8">Net area <span class="u">m²</span><span class="ar">المساحة الصافية</span></label>
           <input id="u8" type="number" min="0" step="0.01" value="40" data-usable>
@@ -839,7 +839,7 @@
           <span class="val" data-nettotal>—</span>
         </div>
       </div>
-      <div class="grpbox common">
+      <div class="grpbox g-com">
         <div class="field">
           <label for="c8">Common + walls <span class="u">m²</span><span class="ar">المشاع والجدران</span></label>
           <input id="c8" type="number" min="0" step="0.01" value="3.39" data-carea>
@@ -867,7 +867,7 @@
         <span class="n-ar ar">الزاوية الخلفية</span>
         <span class="tag" data-load></span>
       </div>
-      <div class="grpbox net">
+      <div class="grpbox g-net">
         <div class="field">
           <label for="u9">Net area <span class="u">m²</span><span class="ar">المساحة الصافية</span></label>
           <input id="u9" type="number" min="0" step="0.01" value="44" data-usable>
@@ -881,7 +881,7 @@
           <span class="val" data-nettotal>—</span>
         </div>
       </div>
-      <div class="grpbox common">
+      <div class="grpbox g-com">
         <div class="field">
           <label for="c9">Common + walls <span class="u">m²</span><span class="ar">المشاع والجدران</span></label>
           <input id="c9" type="number" min="0" step="0.01" value="3.73" data-carea>
@@ -909,7 +909,7 @@
         <span class="n-ar ar">الخلفي</span>
         <span class="tag" data-load></span>
       </div>
-      <div class="grpbox net">
+      <div class="grpbox g-net">
         <div class="field">
           <label for="u10">Net area <span class="u">m²</span><span class="ar">المساحة الصافية</span></label>
           <input id="u10" type="number" min="0" step="0.01" value="44" data-usable>
@@ -923,7 +923,7 @@
           <span class="val" data-nettotal>—</span>
         </div>
       </div>
-      <div class="grpbox common">
+      <div class="grpbox g-com">
         <div class="field">
           <label for="c10">Common + walls <span class="u">m²</span><span class="ar">المشاع والجدران</span></label>
           <input id="c10" type="number" min="0" step="0.01" value="3.73" data-carea>
